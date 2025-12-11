@@ -1,0 +1,80 @@
+dbSetting:
+  mysql:
+    mysql_user: "0wew0"
+    mysql_pwd: "mysql_password"
+    mysql_addr: "127.0.0.1"
+    mysql_port: "3306"
+    mysql_db: "template_db"
+    mysql_limit: "100"
+  mysql_advanced:
+    maxLinkNumber: 50 # 同时连接mysql的最大数量
+    maxIdleNumber: 0 # 最大空闲连接数量
+    maxIdleTime: 10 # 空闲链接超时时间(分钟)
+    maxLifeTime: 60 # 链接最大存活时间(分钟)
+    maxPoolSize: 20 # 线程池最大连接数
+    timeOut: 120 # 数据库超时时间(秒)
+  redis:
+    redis_addr: "127.0.0.1"
+    redis_port: "6379"
+    redis_pwd: ""
+    redis_db: 0
+    redis_poolSize: 20
+    redis_minIdleConns: 0
+  redis_max_db: 15
+  maxLinkNumber:
+    mysql: 50
+    redis: 20
+  waitCount: 10 # 等待次数
+  waitTime: 500 # 等待时间
+  logger_level: 1 # 日志等级:0 - 错误(只有在报错时才会打印SQL语句),1 - 调试(总是打印SQL语句)
+config:
+  appName: "Template"
+  development: false
+  returnMessageFilePath: "./conf/code.csv"
+  timeZone:
+    format: "2006-01-02 15:04:05"
+    offset: 8
+    name: "Asia/Shanghai"
+    sqlOffset: 8 # 数据库时间偏移量
+    sqlName: "Asia/Shanghai" # 数据库时间偏移量
+  defaultLocaleID: 1 # 默认语言ID
+  lang: # 语言列表
+    - "en"
+    - "zhHans"
+    - "zhHant"
+    - "es"
+  logPath: "./conf/log/" # 日志保存路径
+  suburl: "/api/ow/" # 子目录
+  handleFuncKeyList: # 接口名称列表
+    - "template/"
+  listenandserve: "36040" # 监听端口
+  redis_vcode_db: 1
+  redis_login_db: 3
+  token_save_time: 10 # token保存时间
+  # 日志等级
+  # -1: 禁用
+  #  0: Error
+  #  1: Warning
+  #  2: Debug
+  #  3: Infox
+  logger_level: 3
+  http_proxy: "http://127.0.0.1:11111"
+  # OSS 文件夹路径
+  oss_path:
+    home: "home/"
+    news: "news/"
+    product: "product/"
+  oss:
+    - bucket: "bucket_name"
+      id: "AccessKeyID"
+      secret: "AccessKeySecret"
+  mail:
+    from: "test@test.com"
+    formname: "test"
+    pw: "test"
+    host: "test.com"
+    port: "465"
+    logo: "<img class='logo' src='data:image/png;base64,iVBORw0...'/>"
+    css: "<style>.logo{height:50px;display:block;margin:0 auto;}.head{font-weight:bold;font-size:16pt;}.code{font-size:26pt;}.text{TEXT-align:center;}</style>"
+    body: "<p class='text head'>{HEAD}</p><p class='text'>{TEXT1}</p><p class='text head code'>{VCODE}</p><p class='text'><span>{TEXT2}</span>, <span>{TEXT3}</span></p>"
+    mailtype: "html"

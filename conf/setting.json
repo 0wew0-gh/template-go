@@ -1,0 +1,89 @@
+{
+    "dbSetting": {
+        "mysql": {
+            "mysql_user": "0wew0",
+            "mysql_pwd": "mysql_password",
+            "mysql_addr": "127.0.0.1",
+            "mysql_port": "3306",
+            "mysql_db": "template_db",
+            "mysql_limit": "100"
+        },
+        "mysql_advanced": {
+            "maxLinkNumber": 50,
+            "maxIdleNumber": 0,
+            "maxIdleTime": 10,
+            "maxLifeTime": 60,
+            "maxPoolSize": 20,
+            "timeOut": 120
+        },
+        "redis": {
+            "redis_addr": "127.0.0.1",
+            "redis_port": "6379",
+            "redis_pwd": "",
+            "redis_db": 0,
+            "redis_poolSize": 20,
+            "redis_minIdleConns": 0
+        },
+        "redis_max_db": 15,
+        "maxLinkNumber": {
+            "mysql": 50,
+            "redis": 20
+        },
+        "waitCount": 10,
+        "waitTime": 500,
+        "logger_level": 1
+    },
+    "config": {
+        "appName": "Template",
+        "development": false,
+        "returnMessageFilePath": "./conf/code.csv",
+        "timeZone": {
+            "format": "2006-01-02 15:04:05",
+            "offset": 8,
+            "name": "Asia/Shanghai",
+            "sqlOffset": 8,
+            "sqlName": "Asia/Shanghai"
+        },
+        "defaultLocaleID": 1,
+        "lang": [
+            "en",
+            "zhHans",
+            "zhHant",
+            "es"
+        ],
+        "logPath": "./conf/log/",
+        "suburl": "/",
+        "handleFuncKeyList": [
+            "s/"
+        ],
+        "listenandserve": "36040",
+        "redis_vcode_db": 1,
+        "redis_login_db": 3,
+        "token_save_time": 10,
+        "logger_level": 3,
+        "http_proxy": "http://127.0.0.1:11111",
+        "oss_path": {
+            "home": "home/",
+            "news": "news/",
+            "product": "product/"
+        },
+        "oss": [
+            {
+                "bucket": "bucket_name",
+                "id": "AccessKeyID",
+                "secret": "AccessKeySecret"
+            }
+        ],
+        "mail": {
+            "from": "j.chen@tongdy.com",
+            "formname": "Tongdy",
+            "pw": "iyJYNdmkFY3jqLRM",
+            "host": "smtp.exmail.qq.com",
+            "port": "465",
+            "logo": "<img class='logo' src='data:image/png;base64,iVBORw0...'/>",
+            "css": "<style>.logo{height:50px;display:block;margin:0 auto;}.head{font-weight:bold;font-size:16pt;}.code{font-size:26pt;}.text{TEXT-align:center;}</style>",
+            "body": "<p class='text head'>{HEAD}</p><p class='text'>{TEXT1}</p><p class='text head code'>{VCODE}</p><p class='text'><span>{TEXT2}</span>, <span>{TEXT3}</span></p>",
+            "mailtype": "html"
+        }
+    }
+}
