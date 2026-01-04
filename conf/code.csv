@@ -57,6 +57,7 @@ id,code,en,chs,cht,es
 9501,400,oss query failed,oss查询失败,oss查詢失敗,la consulta oss falló
 9601,400,oss query failed,oss查询失败,oss查詢失敗,la consulta oss falló
 9701,400,"Query in progress, please wait for the previous query to complete before trying again",正在查询中，请等待前面的查询完成后再试,正在查詢中，請等待前面的查詢完成後再試,"Consulta en curso, espere a que finalice la consulta anterior antes de volver a intentarlo."
+9800,400,Operation failed,操作失败,操作失敗,Operación fallida
 9999,400,system internal error,系统内部错误,系統內部錯誤,Error interno del sistema
 10000,200,Success,成功,成功,Éxito
 10001,200,No Data,无数据,無資料,Sin datos
