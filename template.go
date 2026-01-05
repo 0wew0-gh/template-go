@@ -3,13 +3,12 @@ package main
 import (
 	"net/http"
 	"sync"
-	"template-go/tool"
 
 	"github.com/kagurazakayashi/libNyaruko_Go/nyahttphandle"
 )
 
 func template(w http.ResponseWriter, r *http.Request, c chan []byte) {
-	tool.PublicHandleNoAllowLog(w, r, conf.L.Info)
+	conf.PublicHandleNoAllowLog(w, r, conf.L.Info)
 
 	localeID := conf.Config.DefaultLocaleID
 

@@ -29,7 +29,7 @@ dbSetting:
   logger_level: 1 # 日志等级:0 - 错误(只有在报错时才会打印SQL语句),1 - 调试(总是打印SQL语句)
 config:
   appName: "Template"
-  development: false
+  development: true
   returnMessageFilePath: "./conf/code.csv"
   timeZone:
     format: "2006-01-02 15:04:05"

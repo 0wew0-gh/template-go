@@ -118,7 +118,7 @@ func main() {
 }
 
 func mainHandleFunc(w http.ResponseWriter, r *http.Request) {
-	tool.PublicHandleNoAllowLog(w, r, conf.L.Info)
+	conf.PublicHandleNoAllowLog(w, r, conf.L.Info)
 	w.WriteHeader(404)
 	w.Write([]byte{})
 }
